@@ -1181,8 +1181,8 @@ ul.social-list li:nth-child(3) a:hover {
 ============================================ */
 
 #stats {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("../img/stats/bg-stats1.jpg") no-repeat fixed center;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/stats/bg-stats1.jpg") no-repeat fixed center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("../img/stats/bg-stats.jpg") no-repeat fixed center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/stats/bg-stats.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
