@@ -69,7 +69,14 @@ $(document).ready(function () {
 
 });*/
 
-/*------------ Team member slideshow -------------*/
+$('.navbar-nav>li>a').on('click', function(){
+    
+    $('.navbar-collapse').collapse('hide');
+    $('.navbar-toggler').toggleClass('change');
+    
+});
+
+/*------------ smooth-scroll -------------*/
 
 $(document).ready(function () {
 
