@@ -27,7 +27,7 @@ $(document).ready(function () {
 
             // show sticky navbar
             $('nav').addClass('sticky-navbar');
-            
+
             // show back to top btn
             $('#back-to-top').fadeIn();
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
             // hide sticky navbar
             $('nav').removeClass('sticky-navbar');
-            
+
             // hide back to top btn
             $('#back-to-top').fadeOut();
 
@@ -53,28 +53,28 @@ $(document).ready(function () {
 
         $('.nav-button').toggleClass('change');
         /*$('nav').css('background', 'rgba(33, 34, 38, 0.8)');*/
-        
+
     });
 
 });
 
-// cloge mobile navbar to click navlink  
-/*$(document).ready(function () {
+// close mobile navbar to click navlink  
+$(document).ready(function () {
 
     $('#myNavbar a').click(function () {
 
         $('.nav-button').click();
-        
+
     });
 
-});*/
-
-$('.navbar-nav>li>a').on('click', function(){
-    
-    $('.navbar-collapse').collapse('hide');
-    $('.navbar-toggler').toggleClass('change');
-    
 });
+
+// $('.navbar-nav>li>a').on('click', function () {
+
+//     $('.navbar-collapse').collapse('hide');
+//     $('.navbar-toggler').toggleClass('change');
+
+// });
 
 /*------------ smooth-scroll -------------*/
 
@@ -240,7 +240,7 @@ $(document).ready(function () {
             },
             // breakpoint from 767 up
             480: {
-                items: 3  
+                items: 3
             },
             // breakpoint from 767 up
             768: {
@@ -274,94 +274,94 @@ $(window).on('load', function () { // makes sure that whole site is loaded
                 "stylers": [
                     {
                         "color": "#34c6d3"
-            },
+                    },
                     {
                         "visibility": "on"
-            },
+                    },
                     {
                         "weight": "0.01"
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "administrative",
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
                         "color": "#444444"
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "landscape",
                 "elementType": "all",
                 "stylers": [
                     {
                         "color": "#f2f2f2"
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "poi",
                 "elementType": "all",
                 "stylers": [
                     {
                         "visibility": "off"
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "road",
                 "elementType": "all",
                 "stylers": [
                     {
                         "saturation": -100
-            },
+                    },
                     {
                         "lightness": 45
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "road.highway",
                 "elementType": "all",
                 "stylers": [
                     {
                         "visibility": "simplified"
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "road.arterial",
                 "elementType": "labels.icon",
                 "stylers": [
                     {
                         "visibility": "off"
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "transit",
                 "elementType": "all",
                 "stylers": [
                     {
                         "visibility": "off"
-            }
-        ]
-    },
+                    }
+                ]
+            },
             {
                 "featureType": "water",
                 "elementType": "all",
                 "stylers": [
                     {
                         "color": "#46bcec"
-            },
+                    },
                     {
                         "visibility": "on"
+                    }
+                ]
             }
         ]
-    }
-]
     });
 
     // 2. Add Marker
@@ -380,14 +380,14 @@ $(window).on('load', function () { // makes sure that whole site is loaded
     marker.addListener('click', function () {
         infowindow.open(map, marker);
     });
-    
+
     // 4. Resize function
-    google.maps.event.addDomListener(window, 'resize', function() {
-        
+    google.maps.event.addDomListener(window, 'resize', function () {
+
         var center = map.getCenter();
         google.maps.event.trigger(map, 'resize');
         map.setCenter(center);
-        
+
     });
 
 });
@@ -395,6 +395,6 @@ $(window).on('load', function () { // makes sure that whole site is loaded
 /*------------ Wow init -------------*/
 
 $(window).ready(function () {
-   new WOW().init(); 
+    new WOW().init();
 });
 
